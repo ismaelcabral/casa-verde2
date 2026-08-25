@@ -3,11 +3,11 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Casa Solta · Cidade Verde — R$ 690.000 | Ideal Imóveis</title>
-<meta name="description" content="Casa solta duplex de alto padrão em Cidade Verde com 3 suítes, espaço gourmet, escada flutuante em mármore, porcelanato e documentação 100% ok. Valor: R$ 690.000.">
-<meta name="keywords" content="Casa Solta Cidade Verde, Imóveis Parnamirim, Casa Duplex Cidade Verde, Ideal Imóveis, Casa 3 suítes Cidade Verde">
+<title>Casa Solta · Cidade Verde — R$ 690.000 | André Fonteles Corretor</title>
+<meta name="description" content="Casa solta duplex de alto padrão em Cidade Verde com 3 suítes, espaço gourmet, escada flutuante em mármore, porcelanato e documentação 100% ok. Atendimento André Fonteles.">
+<meta name="keywords" content="Casa Solta Cidade Verde, Imóveis Parnamirim, Casa Duplex Cidade Verde, André Fonteles, Casa 3 suítes Cidade Verde">
 <meta property="og:title" content="Casa Solta · Cidade Verde — R$ 690.000">
-<meta property="og:description" content="Duplex independente de alto padrão com espaço gourmet, suítes e acabamento fino em Cidade Verde. Aceita financiamento.">
+<meta property="og:description" content="Duplex independente de alto padrão com espaço gourmet, suítes e acabamento fino em Cidade Verde. Aceita financiamento. Atendimento André Fonteles.">
 <meta property="og:type" content="website">
 
 <!-- Preconnect Google Fonts -->
@@ -113,7 +113,7 @@
     z-index: 100;
     padding: 1.1rem 0;
     transition: var(--transition);
-    background: rgba(34, 37, 42, 0.85);
+    background: rgba(34, 37, 42, 0.88);
     backdrop-filter: blur(12px);
     -webkit-backdrop-filter: blur(12px);
     border-bottom: 1px solid rgba(255, 255, 255, 0.08);
@@ -174,6 +174,12 @@
     align-items: center;
     gap: 2rem;
     list-style: none;
+  }
+
+  @media (min-width: 992px) {
+    .nav-links {
+      display: flex;
+    }
   }
 
   .nav-links a {
@@ -238,6 +244,12 @@
     color: var(--white);
   }
 
+  @media (min-width: 992px) {
+    .mobile-menu-btn {
+      display: none;
+    }
+  }
+
   .mobile-menu-btn span {
     display: block;
     width: 22px;
@@ -298,14 +310,14 @@
     height: 100%;
     object-fit: cover;
     object-position: center;
-    opacity: 0.85;
-    transform: scale(1.03);
+    opacity: 0.88;
+    transform: scale(1.02);
     animation: heroZoom 20s infinite alternate ease-in-out;
   }
 
   @keyframes heroZoom {
     0% { transform: scale(1); }
-    100% { transform: scale(1.07); }
+    100% { transform: scale(1.06); }
   }
 
   .hero-scrim {
@@ -313,9 +325,9 @@
     inset: 0;
     background: linear-gradient(
       180deg,
-      rgba(34, 37, 42, 0.4) 0%,
-      rgba(34, 37, 42, 0.65) 45%,
-      rgba(20, 22, 26, 0.95) 85%,
+      rgba(34, 37, 42, 0.35) 0%,
+      rgba(34, 37, 42, 0.6) 45%,
+      rgba(20, 22, 26, 0.94) 85%,
       rgba(15, 17, 20, 1) 100%
     );
   }
@@ -333,10 +345,10 @@
     align-items: center;
     gap: 0.6rem;
     margin-bottom: 1rem;
-    background: rgba(200, 134, 86, 0.12);
+    background: rgba(200, 134, 86, 0.15);
     padding: 0.4rem 0.9rem;
     border-radius: 30px;
-    border: 1px solid rgba(200, 134, 86, 0.3);
+    border: 1px solid rgba(200, 134, 86, 0.35);
   }
 
   .hero-eyebrow::before {
@@ -377,9 +389,9 @@
     gap: 1.5rem;
     flex-wrap: wrap;
     margin-bottom: 2.2rem;
-    background: rgba(44, 48, 54, 0.6);
+    background: rgba(44, 48, 54, 0.65);
     backdrop-filter: blur(10px);
-    border: 1px solid rgba(255, 255, 255, 0.12);
+    border: 1px solid rgba(255, 255, 255, 0.14);
     padding: 1.2rem 1.8rem;
     border-radius: var(--radius-md);
     width: fit-content;
@@ -879,7 +891,7 @@
 
   @media (min-width: 992px) {
     .gallery-grid {
-      grid-template-columns: repeat(4, 1fr);
+      grid-template-columns: repeat(3, 1fr);
     }
   }
 
@@ -1233,8 +1245,8 @@
   }
 
   .broker-card img {
-    width: 76px;
-    height: 76px;
+    width: 84px;
+    height: 84px;
     object-fit: cover;
     border-radius: 50%;
     flex-shrink: 0;
@@ -1248,14 +1260,14 @@
 
   .broker-name {
     font-weight: 700;
-    font-size: 1.15rem;
+    font-size: 1.2rem;
     color: var(--white);
   }
 
   .broker-role {
     font-family: 'IBM Plex Mono', monospace;
-    font-size: 0.72rem;
-    color: var(--sage);
+    font-size: 0.75rem;
+    color: var(--sage-light);
     letter-spacing: 0.08em;
     text-transform: uppercase;
     margin-top: 0.2rem;
@@ -1263,12 +1275,13 @@
 
   .broker-phone {
     font-family: 'IBM Plex Mono', monospace;
-    font-size: 0.85rem;
-    color: rgba(255, 255, 255, 0.7);
+    font-size: 0.9rem;
+    color: var(--wood-light);
     margin-top: 0.4rem;
     display: flex;
     align-items: center;
     gap: 0.4rem;
+    font-weight: 600;
   }
 
   .status-badge {
@@ -1519,10 +1532,10 @@
 <nav class="navbar" id="navbar">
   <div class="container navbar-inner">
     <a href="#" class="brand">
-      <div class="brand-logo">I</div>
+      <div class="brand-logo">A</div>
       <div class="brand-text">
-        <span class="brand-title">IDEAL IMÓVEIS</span>
-        <span class="brand-sub">CIDADE VERDE</span>
+        <span class="brand-title">ANDRÉ FONTELES</span>
+        <span class="brand-sub">CORRETOR DE IMÓVEIS</span>
       </div>
     </a>
 
@@ -1536,11 +1549,11 @@
     </ul>
 
     <div class="nav-actions">
-      <a href="https://wa.me/5584999999999?text=Ol%C3%A1!%20Gostaria%20de%20informa%C3%A7%C3%B5es%20sobre%20a%20Casa%20Solta%20em%20Cidade%20Verde%20(R%24%20690.000)." target="_blank" rel="noopener" class="btn-nav-cta">
+      <a href="https://wa.me/5585999020195?text=Ol%C3%A1%20Andr%C3%A9!%20Gostaria%20de%20informa%C3%A7%C3%B5es%20sobre%20a%20Casa%20Solta%20em%20Cidade%20Verde%20(R%24%20690.000)." target="_blank" rel="noopener" class="btn-nav-cta">
         <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
           <path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-0.999 3.648 3.742-.981z"/>
         </svg>
-        Falar com Corretor
+        Falar com André
       </a>
       <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Abrir Menu">
         <span></span>
@@ -1558,13 +1571,13 @@
   <a href="#planta" onclick="closeMobileMenu()">Planta Baixa</a>
   <a href="#galeria" onclick="closeMobileMenu()">Galeria de Fotos</a>
   <a href="#simulador" onclick="closeMobileMenu()">Simulação de Financiamento</a>
-  <a href="#contato" onclick="closeMobileMenu()">Falar com Corretor</a>
+  <a href="#contato" onclick="closeMobileMenu()">Falar com André Fonteles</a>
 </div>
 
 <!-- ============ HERO SECTION ============ -->
 <section class="hero" id="visão-geral">
   <div class="hero-bg">
-    <img class="hero-img" src="images/patio-externo.jpg" alt="Casa Solta Cidade Verde — Fachada e Pátio">
+    <img class="hero-img" src="images/imovel-08.jpg" alt="Casa Solta Cidade Verde — Fachada Principal">
     <div class="hero-scrim"></div>
   </div>
 
@@ -1574,7 +1587,7 @@
     </div>
     <h1 class="display">CASA SOLTA <em>CIDADE VERDE</em></h1>
     <p class="hero-sub">
-      Arquitetura contemporânea de alto padrão com 3 suítes, acabamento em mármore e porcelanato, amplo pátio e área gourmet com churrasqueira.
+      Arquitetura contemporânea de alto padrão com 3 suítes, acabamento refinado em mármore e porcelanato, pátio privativo e espaço gourmet.
     </p>
 
     <div class="hero-price-box">
@@ -1589,7 +1602,7 @@
     </div>
 
     <div class="hero-cta-group">
-      <a href="https://wa.me/5584999999999?text=Ol%C3%A1!%20Gostaria%20de%20agendar%20uma%20visita%20para%20a%20Casa%20Solta%20em%20Cidade%20Verde%20(R%24%20690.000)." target="_blank" rel="noopener" class="cta-primary">
+      <a href="https://wa.me/5585999020195?text=Ol%C3%A1%20Andr%C3%A9!%20Gostaria%20de%20agendar%20uma%20visita%20para%20a%20Casa%20Solta%20em%20Cidade%20Verde%20(R%24%20690.000)." target="_blank" rel="noopener" class="cta-primary">
         <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
           <path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-0.999 3.648 3.742-.981z"/>
         </svg>
@@ -1601,7 +1614,7 @@
           <circle cx="8.5" cy="8.5" r="1.5"/>
           <polyline points="21 15 16 10 5 21"/>
         </svg>
-        VER FOTOS
+        VER 13 FOTOS
       </a>
     </div>
   </div>
@@ -1623,7 +1636,7 @@
       <div class="ribbon-icon">
         <svg viewBox="0 0 24 24"><rect x="1" y="3" width="22" height="18" rx="2" ry="2"/><path d="M8 21v-4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v4"/><circle cx="7" cy="9" r="1"/><circle cx="17" cy="9" r="1"/></svg>
       </div>
-      <div class="ribbon-icon-text ribbon-info">
+      <div class="ribbon-info">
         <span class="ribbon-label">GARAGEM</span>
         <span class="ribbon-val">2 a 3 Vagas</span>
       </div>
@@ -1663,7 +1676,7 @@
           <svg viewBox="0 0 24 24"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
         </div>
         <h3>Escada Flutuante em Mármore</h3>
-        <p>Projeto de escada suspensa revestida em mármore nobre, com guarda-corpo em vidro temperado verde e estrutura branca de design contemporâneo.</p>
+        <p>Projeto de escada suspensa revestida em mármore nobre, com guarda-corpo em vidro temperado e estrutura branca de design contemporâneo.</p>
       </div>
 
       <div class="highlight-card">
@@ -1781,16 +1794,26 @@
     </div>
 
     <div class="gallery-filter">
-      <button class="filter-btn active" onclick="filterGallery('todos')">Todas as Fotos</button>
+      <button class="filter-btn active" onclick="filterGallery('todos')">Todas (13 Fotos)</button>
       <button class="filter-btn" onclick="filterGallery('fachada')">Fachada & Externa</button>
       <button class="filter-btn" onclick="filterGallery('interiores')">Interiores & Escada</button>
       <button class="filter-btn" onclick="filterGallery('gourmet')">Área Gourmet</button>
     </div>
 
     <div class="gallery-grid">
-      <!-- Photo 1: Escada Mármore -->
-      <figure class="featured interior" onclick="openLightbox(0)">
-        <img src="images/escada-marmore.jpg" alt="Escada flutuante em mármore com vidro temperado" loading="lazy">
+      <!-- 13 Photos from André Fonteles Folder -->
+      <figure class="featured fachada" onclick="openLightbox(0)">
+        <img src="images/imovel-08.jpg" alt="Fachada duplex frontal Cidade Verde" loading="lazy">
+        <figcaption>
+          <span>Fachada Frontal Duplex</span>
+          <div class="gallery-zoom-icon">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7"/></svg>
+          </div>
+        </figcaption>
+      </figure>
+
+      <figure class="interior" onclick="openLightbox(1)">
+        <img src="images/imovel-03.jpg" alt="Escada flutuante em mármore com guarda-corpo em vidro" loading="lazy">
         <figcaption>
           <span>Escada Flutuante em Mármore</span>
           <div class="gallery-zoom-icon">
@@ -1799,33 +1822,110 @@
         </figcaption>
       </figure>
 
-      <!-- Photo 2: Pátio Externo -->
-      <figure class="externo" onclick="openLightbox(1)">
-        <img src="images/patio-externo.jpg" alt="Pátio externo e varanda térrea em porcelanato" loading="lazy">
-        <figcaption>
-          <span>Pátio Lateral & Porcelanato</span>
-          <div class="gallery-zoom-icon">
-            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7"/></svg>
-          </div>
-        </figcaption>
-      </figure>
-
-      <!-- Photo 3: Churrasqueira Gourmet -->
       <figure class="gourmet" onclick="openLightbox(2)">
-        <img src="images/churrasqueira-gourmet.jpg" alt="Área gourmet coberta com churrasqueira e bancada" loading="lazy">
+        <img src="images/imovel-02.jpg" alt="Espaço Gourmet com churrasqueira e bancada" loading="lazy">
         <figcaption>
-          <span>Área Gourmet Coberta</span>
+          <span>Área Gourmet & Churrasqueira</span>
           <div class="gallery-zoom-icon">
             <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7"/></svg>
           </div>
         </figcaption>
       </figure>
 
-      <!-- Photo 4: Fachada Externa -->
-      <figure class="fachada" onclick="openLightbox(3)">
-        <img src="images/fachada-min.jpg" alt="Fachada frontal e portão da casa solta" loading="lazy">
+      <figure class="externo" onclick="openLightbox(3)">
+        <img src="images/imovel-01.jpg" alt="Pátio lateral e varanda térrea em porcelanato" loading="lazy">
         <figcaption>
-          <span>Fachada Duplex & Muros</span>
+          <span>Pátio Lateral & Varanda</span>
+          <div class="gallery-zoom-icon">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7"/></svg>
+          </div>
+        </figcaption>
+      </figure>
+
+      <figure class="interior" onclick="openLightbox(4)">
+        <img src="images/imovel-04.jpg" alt="Sala de estar ampla com piso em porcelanato" loading="lazy">
+        <figcaption>
+          <span>Sala Integrada em Porcelanato</span>
+          <div class="gallery-zoom-icon">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7"/></svg>
+          </div>
+        </figcaption>
+      </figure>
+
+      <figure class="interior" onclick="openLightbox(5)">
+        <img src="images/imovel-05.jpg" alt="Cozinha com acabamento em bancada de granito" loading="lazy">
+        <figcaption>
+          <span>Cozinha & Bancada</span>
+          <div class="gallery-zoom-icon">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7"/></svg>
+          </div>
+        </figcaption>
+      </figure>
+
+      <figure class="interior" onclick="openLightbox(6)">
+        <img src="images/imovel-06.jpg" alt="Banheiro com revestimento moderno" loading="lazy">
+        <figcaption>
+          <span>Banheiro & Revestimento</span>
+          <div class="gallery-zoom-icon">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7"/></svg>
+          </div>
+        </figcaption>
+      </figure>
+
+      <figure class="interior" onclick="openLightbox(7)">
+        <img src="images/imovel-07.jpg" alt="Suíte espaçosa com janelas em vidro verde" loading="lazy">
+        <figcaption>
+          <span>Suíte Principal</span>
+          <div class="gallery-zoom-icon">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7"/></svg>
+          </div>
+        </figcaption>
+      </figure>
+
+      <figure class="fachada" onclick="openLightbox(8)">
+        <img src="images/imovel-09.jpg" alt="Vista externa da varanda superior" loading="lazy">
+        <figcaption>
+          <span>Varanda Superior em Vidro</span>
+          <div class="gallery-zoom-icon">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7"/></svg>
+          </div>
+        </figcaption>
+      </figure>
+
+      <figure class="externo" onclick="openLightbox(9)">
+        <img src="images/imovel-10.jpg" alt="Garagem e entrada de veículos" loading="lazy">
+        <figcaption>
+          <span>Garagem Coberta & Recuo</span>
+          <div class="gallery-zoom-icon">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7"/></svg>
+          </div>
+        </figcaption>
+      </figure>
+
+      <figure class="gourmet" onclick="openLightbox(10)">
+        <img src="images/imovel-11.jpg" alt="Bancada da área gourmet e quintal" loading="lazy">
+        <figcaption>
+          <span>Bancada Gourmet & Quintal</span>
+          <div class="gallery-zoom-icon">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7"/></svg>
+          </div>
+        </figcaption>
+      </figure>
+
+      <figure class="interior" onclick="openLightbox(11)">
+        <img src="images/imovel-12.jpg" alt="Circulação superior e piso" loading="lazy">
+        <figcaption>
+          <span>Hall Superior & Quartos</span>
+          <div class="gallery-zoom-icon">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7"/></svg>
+          </div>
+        </figcaption>
+      </figure>
+
+      <figure class="externo" onclick="openLightbox(12)">
+        <img src="images/imovel-13.jpg" alt="Visão ampla do imóvel Cidade Verde" loading="lazy">
+        <figcaption>
+          <span>Área Externa & Muros</span>
           <div class="gallery-zoom-icon">
             <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7"/></svg>
           </div>
@@ -1900,7 +2000,7 @@
           <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
             <path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-0.999 3.648 3.742-.981z"/>
           </svg>
-          ENVIAR SIMULAÇÃO PARA O CORRETOR
+          ENVIAR SIMULAÇÃO PARA ANDRÉ FONTELES
         </button>
       </div>
     </div>
@@ -1920,11 +2020,11 @@
         </p>
 
         <div class="broker-card">
-          <img src="images/corretor.jpg" alt="Foto do Corretor Ismael Cabral">
+          <img src="images/corretor.jpg" alt="Foto de Perfil do Corretor André Fonteles">
           <div class="broker-info">
-            <span class="broker-name">Ismael Cabral</span>
-            <span class="broker-role">Consultor Imobiliário CRECI</span>
-            <span class="broker-phone">(84) 99999-9999</span>
+            <span class="broker-name">André Fonteles</span>
+            <span class="broker-role">Corretor de imóveis</span>
+            <span class="broker-phone">(85) 99902-0195</span>
             <span class="status-badge">
               <span class="status-dot"></span>
               Disponível Agora · Atende em < 15 min
@@ -1965,7 +2065,7 @@
 
           <div class="field">
             <label for="phone">Telefone / WhatsApp</label>
-            <input type="tel" id="phone" required placeholder="(84) 98888-7777">
+            <input type="tel" id="phone" required placeholder="(85) 98888-7777">
           </div>
 
           <div class="field">
@@ -1986,7 +2086,7 @@
             <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
               <path d="M2.01 21L23 12 2.01 3 2 10l15 2-15 2z"/>
             </svg>
-            AGENDAR VISITA AGORA
+            AGENDAR VISITA COM ANDRÉ FONTELES
           </button>
           <span class="form-note">Seus dados estão protegidos. Resposta imediata via WhatsApp.</span>
         </form>
@@ -1998,12 +2098,12 @@
 <!-- FOOTER -->
 <footer>
   <div class="container">
-    &copy; 2026 IDEAL IMÓVEIS · Casa Solta Cidade Verde — R$ 690.000 · Todos os direitos reservados.
+    &copy; 2026 André Fonteles — Corretor de Imóveis (85) 99902-0195 · Casa Solta Cidade Verde — R$ 690.000.
   </div>
 </footer>
 
 <!-- FLOATING WHATSAPP -->
-<a href="https://wa.me/5584999999999?text=Ol%C3%A1!%20Estou%20no%20site%20da%20Casa%20Solta%20em%20Cidade%20Verde%20e%20gostaria%20de%20atendimento." target="_blank" rel="noopener" class="floating-whatsapp" aria-label="Falar pelo WhatsApp">
+<a href="https://wa.me/5585999020195?text=Ol%C3%A1%20Andr%C3%A9!%20Estou%20no%20site%20da%20Casa%20Solta%20em%20Cidade%20Verde%20e%20gostaria%20de%20atendimento." target="_blank" rel="noopener" class="floating-whatsapp" aria-label="Falar pelo WhatsApp com André Fonteles">
   <svg width="32" height="32" viewBox="0 0 24 24">
     <path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-0.999 3.648 3.742-.981z"/>
   </svg>
@@ -2012,7 +2112,7 @@
 <!-- TOAST -->
 <div class="toast" id="toast">
   <svg width="20" height="20" viewBox="0 0 24 24" fill="#81C784"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
-  <span id="toastMsg">Solicitação enviada! Redirecionando para o WhatsApp...</span>
+  <span id="toastMsg">Solicitação enviada! Redirecionando para o WhatsApp de André Fonteles...</span>
 </div>
 
 <script>
@@ -2069,12 +2169,21 @@
     });
   }
 
-  // Lightbox Functionality
+  // Lightbox Functionality - 13 Photos
   const galleryImages = [
-    { src: 'images/escada-marmore.jpg', title: 'Escada Flutuante em Mármore & Vidro Temperado' },
-    { src: 'images/patio-externo.jpg', title: 'Pátio Externo e Piso em Porcelanato' },
-    { src: 'images/churrasqueira-gourmet.jpg', title: 'Área Gourmet Coberta com Churrasqueira' },
-    { src: 'images/fachada-min.jpg', title: 'Fachada Frontal Duplex Contemporânea' }
+    { src: 'images/imovel-08.jpg', title: 'Fachada Frontal Duplex Contemporânea' },
+    { src: 'images/imovel-03.jpg', title: 'Escada Flutuante em Mármore & Vidro Temperado' },
+    { src: 'images/imovel-02.jpg', title: 'Área Gourmet Coberta com Churrasqueira' },
+    { src: 'images/imovel-01.jpg', title: 'Pátio Lateral & Varanda em Porcelanato' },
+    { src: 'images/imovel-04.jpg', title: 'Sala de Estar Integrada em Porcelanato' },
+    { src: 'images/imovel-05.jpg', title: 'Cozinha Americana com Bancada de Granito' },
+    { src: 'images/imovel-06.jpg', title: 'Banheiro Social com Revestimento Moderno' },
+    { src: 'images/imovel-07.jpg', title: 'Suíte Principal Espaçosa' },
+    { src: 'images/imovel-09.jpg', title: 'Varanda Superior em Vidro Verde' },
+    { src: 'images/imovel-10.jpg', title: 'Garagem Coberta com Vagas Privativas' },
+    { src: 'images/imovel-11.jpg', title: 'Bancada do Espaço Gourmet & Quintal' },
+    { src: 'images/imovel-12.jpg', title: 'Hall de Circulação dos Dormitórios' },
+    { src: 'images/imovel-13.jpg', title: 'Área Externa & Muros de Segurança' }
   ];
   let currentIdx = 0;
 
@@ -2154,8 +2263,8 @@
     const financed = document.getElementById('financedAmount').textContent;
     const installment = document.getElementById('monthlyInstallment').textContent;
 
-    const msg = `Olá Ismael! Fiz uma simulação de financiamento no site para a Casa Solta em Cidade Verde:\n- Valor do Imóvel: ${propVal}\n- Entrada: ${downVal}\n- Valor Financiado: ${financed}\n- Parcela Inicial Estimada: ${installment}\n\nGostaria de dar andamento à análise de crédito.`;
-    window.open(`https://wa.me/5584999999999?text=${encodeURIComponent(msg)}`, '_blank');
+    const msg = `Olá André! Fiz uma simulação de financiamento no site para a Casa Solta em Cidade Verde:\n- Valor do Imóvel: ${propVal}\n- Entrada: ${downVal}\n- Valor Financiado: ${financed}\n- Parcela Inicial Estimada: ${installment}\n\nGostaria de dar andamento à análise de crédito.`;
+    window.open(`https://wa.me/5585999020195?text=${encodeURIComponent(msg)}`, '_blank');
   }
 
   // Form Handling
@@ -2165,11 +2274,11 @@
     const phone = document.getElementById('phone').value;
     const prefTime = document.getElementById('prefTime').value;
 
-    showToast(`Obrigado, ${name}! Abrindo WhatsApp...`);
+    showToast(`Obrigado, ${name}! Redirecionando para André Fonteles...`);
 
-    const msg = `Olá Ismael! Meu nome é ${name} (${phone}). Gostaria de agendar uma visita para a Casa Solta em Cidade Verde (R$ 690.000). Melhor horário: ${prefTime}.`;
+    const msg = `Olá André! Meu nome é ${name} (${phone}). Gostaria de agendar uma visita para a Casa Solta em Cidade Verde (R$ 690.000). Melhor horário: ${prefTime}.`;
     setTimeout(() => {
-      window.open(`https://wa.me/5584999999999?text=${encodeURIComponent(msg)}`, '_blank');
+      window.open(`https://wa.me/5585999020195?text=${encodeURIComponent(msg)}`, '_blank');
     }, 1200);
   }
 
