@@ -1958,10 +1958,9 @@
       <div class="calc-inputs">
         <div class="calc-field">
           <div class="calc-label-row">
-            <span class="calc-label">Valor do Imóvel</span>
+            <span class="calc-label">Valor do Imóvel (Fixo)</span>
             <span class="calc-val-badge" id="propertyValDisplay">R$ 690.000</span>
           </div>
-          <input type="range" class="calc-slider" id="propertyVal" min="500000" max="900000" step="10000" value="690000">
         </div>
 
         <div class="calc-field">
@@ -2219,12 +2218,11 @@
   });
 
   // Mortgage Calculator Logic
-  const propSlider = document.getElementById('propertyVal');
   const downSlider = document.getElementById('downPay');
   const yearsSlider = document.getElementById('yearsVal');
 
   function updateCalculator() {
-    const propVal = parseInt(propSlider.value);
+    const propVal = 690000;
     const downVal = parseInt(downSlider.value);
     const years = parseInt(yearsSlider.value);
 
@@ -2252,7 +2250,6 @@
     document.getElementById('monthlyInstallment').textContent = 'R$ ' + initialInstallment.toLocaleString('pt-BR') + ' /mês';
   }
 
-  propSlider.addEventListener('input', updateCalculator);
   downSlider.addEventListener('input', updateCalculator);
   yearsSlider.addEventListener('input', updateCalculator);
   updateCalculator();
